@@ -17,12 +17,18 @@
   <body>
     <div class="container">
       <header>
-        <img src="images/note.png"/>
+        <img src="images/note.png" />
         <h1>Shopping List</h1>
       </header>
       <div class="container">
         <form action="" id="item-form">
-          <input placeholder="Enter Item" name="item" type="text" class="form-input" id="item-input">
+          <input
+            placeholder="Enter Item"
+            name="item"
+            type="text"
+            class="form-input"
+            id="item-input"
+          />
           <div>
             <button type="submit" class="btn">
               <i class="fa-solid fa-plus"></i> Add Item
@@ -30,21 +36,27 @@
           </div>
         </form>
         <div>
-          <input placeholder="Filter Items" name="filter" type="text" class="form-input-filter">
+          <input
+            placeholder="Filter Items"
+            id="item-filter"
+            name="filter"
+            type="text"
+            class="form-input-filter"
+          />
         </div>
         <ul id="item-list" class="items">
-          <li>
+          <!-- <li>
             Apples
-            <button class="btn-link text-red">
+            <button class="remove-item btn-link text-red">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </li>
           <li>
             Apples
-            <button class="btn-link text-red">
+            <button class="remove-item btn-link text-red">
               <i class="fa-solid fa-xmark"></i>
             </button>
-          </li>
+          </li> -->
         </ul>
         <button id="clear" class="btn-clear">Clear All</button>
       </div>
