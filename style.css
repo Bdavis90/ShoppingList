@@ -104,15 +104,24 @@ header h1 {
 
 .items {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .items li {
   border: 1px solid #ccc;
   padding: 10px 15px;
+  width: 45%;
   border-radius: 5px;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
   margin: 0px 5px 20px;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .items li {
+    width: 100%;
+  }
 }
