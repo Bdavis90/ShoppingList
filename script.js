@@ -53,6 +53,21 @@ const removeItem = (e) => {
   checkUI();
 };
 
+const filterItems = (e) => {
+  const items = Array.from(document.querySelectorAll("li"));
+  const text = e.target.value.toLowerCase();
+
+  items.forEach((item) => {
+    if (!item.textContent.toLowerCase().includes(text)) {
+      item.style.display = "none";
+    } else {
+      item.style.display = "flex";
+    }
+  });
+
+  checkUI();
+};
+
 const checkUI = () => {
   const items = itemList.querySelectorAll("li");
 
@@ -69,5 +84,5 @@ const checkUI = () => {
 itemForm.addEventListener("submit", addItem);
 itemList.addEventListener("click", removeItem);
 clearBtn.addEventListener("click", clearItems);
-
+itemFilter.addEventListener("input", filterItems);
 checkUI();
