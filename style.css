@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
 *,
 *::before,
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
@@ -55,10 +55,10 @@ header h1 {
   outline: none;
 }
 
-
 .btn {
   background-color: #333;
   color: #fff;
+  border: none;
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
@@ -90,6 +90,10 @@ header h1 {
   cursor: pointer;
 }
 
+.edit-mode {
+  color: #ccc;
+}
+
 .btn-clear:hover {
   background-color: #f1f1f1;
 }
@@ -110,7 +114,5 @@ header h1 {
   display: flex;
   justify-content: space-between;
   margin: 0px 5px 20px;
+  cursor: pointer;
 }
-
-
-
